@@ -1,0 +1,31 @@
+# Redis Cache Deployment Template (Showcase Only)
+# This YAML is fully commented for demonstration purposes.
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: stylumia-redis
+#   labels:
+#     app: stylumia-redis
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: stylumia-redis
+#   template:
+#     metadata:
+#       labels:
+#         app: stylumia-redis
+#     spec:
+#       containers:
+#         - name: redis
+#           image: redis:6.2
+#           ports:
+#             - containerPort: 6379
+#           resources:
+#             requests:
+#               cpu: "100m"
+#               memory: "128Mi"
+#             limits:
+#               cpu: "500m"
+#               memory: "512Mi" 

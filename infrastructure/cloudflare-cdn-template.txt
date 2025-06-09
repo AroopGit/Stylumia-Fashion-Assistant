@@ -1,0 +1,23 @@
+# Cloudflare CDN Configuration Template (Showcase Only)
+# This file demonstrates a typical Cloudflare CDN setup for a web app.
+# All lines are commented out for demonstration purposes.
+
+# zone: example.com  # Your domain
+# settings:
+#   ssl: 'full'
+#   minify:
+#     css: true
+#     js: true
+#     html: true
+#   cache_level: 'aggressive'
+#   browser_cache_ttl: 14400
+#   always_online: true
+#   rocket_loader: true
+#   security_level: 'high'
+#   page_rules:
+#     - url: 'example.com/*'
+#       settings:
+#         cache_level: 'cache_everything'
+#         edge_cache_ttl: 7200
+#         browser_cache_ttl: 14400
+#         always_use_https: true 

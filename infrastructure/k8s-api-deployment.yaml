@@ -1,0 +1,35 @@
+# Kubernetes Deployment for API Layer (Showcase Only)
+# This YAML is fully commented for demonstration purposes.
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: stylumia-api
+#   labels:
+#     app: stylumia-api
+# spec:
+#   replicas: 3  # Number of API pods
+#   selector:
+#     matchLabels:
+#       app: stylumia-api
+#   template:
+#     metadata:
+#       labels:
+#         app: stylumia-api
+#     spec:
+#       containers:
+#         - name: api-container
+#           image: your-api-image:latest  # Replace with your image
+#           ports:
+#             - containerPort: 8000
+#           env:
+#             - name: ENV
+#               value: production
+#           resources:
+#             requests:
+#               cpu: "250m"
+#               memory: "512Mi"
+#             limits:
+#               cpu: "1"
+#               memory: "1Gi"
+#       # Add liveness/readiness probes as needed 

@@ -1,0 +1,25 @@
+# AWS CloudFormation template for DynamoDB (showcase only)
+# This template is for demonstration and is fully commented out.
+# Uncomment and edit as needed for real deployments.
+
+# AWSTemplateFormatVersion: '2010-09-09'
+# Description: DynamoDB Table for Stylumia Fashion Assistant
+# Resources:
+#   StylumiaDynamoDBTable:
+#     Type: 'AWS::DynamoDB::Table'
+#     Properties:
+#       TableName: 'StylumiaDemoTable'  # Change as needed
+#       AttributeDefinitions:
+#         - AttributeName: 'UserId'
+#           AttributeType: 'S'
+#       KeySchema:
+#         - AttributeName: 'UserId'
+#           KeyType: 'HASH'
+#       ProvisionedThroughput:
+#         ReadCapacityUnits: 5
+#         WriteCapacityUnits: 5
+#       BillingMode: PAY_PER_REQUEST  # For on-demand scaling
+# Outputs:
+#   TableName:
+#     Description: 'DynamoDB Table Name'
+#     Value: !Ref StylumiaDynamoDBTable 

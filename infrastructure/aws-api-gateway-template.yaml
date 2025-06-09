@@ -1,0 +1,15 @@
+# AWS API Gateway CloudFormation Template (Showcase Only)
+# This YAML is fully commented for demonstration purposes.
+
+# AWSTemplateFormatVersion: '2010-09-09'
+# Description: API Gateway for Stylumia Fashion Assistant
+# Resources:
+#   StylumiaApiGateway:
+#     Type: 'AWS::ApiGateway::RestApi'
+#     Properties:
+#       Name: 'StylumiaDemoApi'
+#       Description: 'API Gateway for Stylumia Fashion Assistant'
+# Outputs:
+#   ApiGatewayId:
+#     Description: 'API Gateway ID'
+#     Value: !Ref StylumiaApiGateway 
